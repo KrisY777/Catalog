@@ -1,0 +1,55 @@
+body    { background-color: #333333; background-image: url("background.jpg"); }
+
+
+
+h1, h2  { font-family: 'Nosifer', cursive; }
+
+h1      { border-bottom: 2px solid #eee; color: #820000; font-size: 40px; }
+
+h2      { border-bottom: 2px solid #eee; color: #adaf05; }
+
+h3, h4  {font-size: 22px; color: #949601; font-family: 'Titillium Web', sans-serif;}
+
+
+
+p       { font-size: 22px; color: #949601; font-family: 'Titillium Web', sans-serif;}
+
+
+a       {text-decoration: none; color: #949601; font-size: 22px;}
+
+
+button  {padding: 5px; font-size: 16px; color:#babc00; background-color: #820000;}
+
+.new    {color: #820000;}
+
+
+
+
+.price  {color:#babc00}
+
+.header {left:50%; text-align: center;}
+
+.name   {width:50%;display: inline-block; float: left;}
+
+
+.price  {text-align: right; width:50%; float: right; }
+
+
+
+.flash  { background: #cee5F5; }
+
+
+
+
+
+
+
+
+#hr { border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 10px 1px black;
+}
+#hr.style-five:after {  content: "\00a0";  /* Prevent margin collapse */
+}
+
+

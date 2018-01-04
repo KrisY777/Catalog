@@ -1,0 +1,31 @@
+{% extends "main.html" %}
+{% block content %}
+
+<h1> Edit Restaurant </h1>
+
+
+<form action="{{ url_for('editItem',item_id = item.id)}}" method = 'post'>
+
+
+	<p>Name:</p>
+		<input type ='text' size='30' name='name' placeholder = "{{item.name}}">
+        <label for="description">Description:</label>
+					<textarea class="form-control" maxlength="250" rows="3" name="description"                   placeholder="{{item.description}}"></textarea>
+
+					<label for="price">Price:</label>
+					<div class="input-group">
+						<div class="input-group-addon">$</div>
+						<input type ="text" class="form-control" maxlength="10" name="price" placeholder="{{item.price}}">
+					</div>
+
+
+<input type='submit' value='Edit'>
+
+
+<a href = '{{url_for('showItems')}}'> Cancel </a>
+
+</form>
+
+
+{% endblock %}
+
